@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import './call.dart';
+import '../common/text.dart';
 
 class IndexPage extends StatefulWidget {
   @override
@@ -15,7 +16,7 @@ class IndexState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('WebRTC'),
+        title: Text(barTitle),
       ),
       body: Center(
         child: Container(
